@@ -4,6 +4,7 @@ import React from 'react';
 import baseUrl from '../utils/baseUrl';
 import axios from 'axios';
 import catchErrors from '../utils/catchErrors';
+import {handleLogin} from '../utils/auth';
 
 const INITIAL_USER = {
   name:'',
@@ -29,13 +30,14 @@ function Signup() {
   }
 
   async function handleSubmit(event){
+    event.preventDefault();
     try{
-      event.preventDefault();
       setLoading(true);
       setError('');
-      const url = `${baseUrl}/api/login`;
+      const url = `${baseUrl}/api/signup`;
       const payload = {...user};
-      await axios.post(url, payload)
+      const response = await axios.post(url, payload);
+      handleLogin(response.data);
     } catch(error){
         catchErrors(error, setError);
     } finally {

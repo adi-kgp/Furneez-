@@ -28,8 +28,8 @@ function Login() {
   }
 
   async function handleSubmit(event){
+    event.preventDefault();
     try{
-      event.preventDefault();
       setLoading(true);
       setError('');
       console.log(user);
