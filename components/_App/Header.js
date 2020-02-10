@@ -10,19 +10,19 @@ Router.onRouteChangeError = () => NProgress.done();
 function Header() {
   const router = useRouter();
 
-  const user = true;
+  const user = false;
 
   function isActive(route) {
     return route === router.pathname;
   }
 
   return (
-    <Menu stackable fluid id='menu' inverted>
-      <Container text>
+    <Menu stackable fluid id='menu' inverted widths='5' >
+      <Container text fluid>
         <Link href='/'>
           <Menu.Item header active={isActive('/')}>
             <Image size='mini' src='/static/logo.svg' style={{ marginRight: '1em' }} />
-            Furneez
+            FURNEEZ
           </Menu.Item>
         </Link>
 
@@ -71,7 +71,6 @@ function Header() {
             </Link>
           </>)
         }
-
       </Container>
     </Menu>
   );
