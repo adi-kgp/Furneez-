@@ -13,7 +13,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Layout>
-        <Component {...pageProps}/>;
+        <Component {...pageProps}/>
       </Layout>
     );
   }

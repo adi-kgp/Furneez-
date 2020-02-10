@@ -1,6 +1,8 @@
 node_modules
 .next
 
+.env
+
 dist
  next.config.*
  now.json
