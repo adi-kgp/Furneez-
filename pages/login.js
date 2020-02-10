@@ -4,6 +4,7 @@ import React from 'react';
 import baseUrl from '../utils/baseUrl';
 import axios from 'axios';
 import catchErrors from '../utils/catchErrors';
+import {handleLogin} from '../utils/auth';
 
 const INITIAL_USER = {
   email:'',
@@ -32,10 +33,10 @@ function Login() {
     try{
       setLoading(true);
       setError('');
-      console.log(user);
-      // const url = `${baseUrl}/api/login`;
-      // const payload = {...user};
-      // await axios.post(url, payload)
+      const url = `${baseUrl}/api/login`;
+      const payload = {...user};
+      const response = await axios.post(url, payload);
+      handleLogin(response.data);
     } catch(error){
         catchErrors(error, setError);
     } finally {
