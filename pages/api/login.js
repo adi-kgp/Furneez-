@@ -28,6 +28,6 @@ export default async (req, res) => {
     }
   } catch(error){
     console.error(error);
-    res.status(500).send('Error loggin in user');
+    res.status(500).send('Error logging in user');
   }
 }
