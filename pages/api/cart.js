@@ -91,7 +91,7 @@ async function handleDeleteRequest(req, res) {
       {user: userId},
       {$pull: {products: {product: productId}}},
       {new : true}
-    ).populate({
+      ).populate({
       path: 'products.product',
       model: 'Product'
     });
@@ -99,7 +99,7 @@ async function handleDeleteRequest(req, res) {
     res.status(200).json(cart.products);
 
   } catch(error) {
-      onsole.error(error);
+      console.error(error);
       res.status(403).send('Please login again');
   }
 }
