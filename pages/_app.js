@@ -34,6 +34,7 @@ class MyApp extends App {
           redirectUser(ctx, '/');
         }
         pageProps.user = user;
+        
       }catch(error){
         console.error('Error getting current user', error);
         // throw out invalid token

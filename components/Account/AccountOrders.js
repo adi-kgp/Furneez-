@@ -27,9 +27,10 @@ function AccountOrders({orders}) {
             <List>
               {order.products.map(p => (
                 <List.Item>
-                  <Image avatar src={p.product.mediaUrl} />
+                  <Image avatar size = 'tiny' src={p.product.mediaUrl} />
                   <List.Content>
-                    <List.Header>{p.product.name}</List.Header>
+                    <List.Header as='a' 
+                      onClick={() => router.push(`/product?_id=${p.product._id}`)}>{p.product.name}</List.Header>
                     <List.Description>
                       {p.quantity} x ₹{p.product.price}
                     </List.Description>
