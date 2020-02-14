@@ -69,7 +69,7 @@ React, Node.js).
 
 ## Link to the deployment
 
-- [Furneez Web App](https://furneez.now.sh)
+- [Furneez Web App](https://furneez.herokuapp.com)
 
 
 
