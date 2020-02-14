@@ -1,6 +1,7 @@
 {
   "name": "furneez",
   "version": 2,
+  "alias" :"furneez",
   "env" : {
     "MONGO_SRV": "mongodb+srv://AdityaSharma:adityasharma1991@furneez-rwzjf.mongodb.net/test?retryWrites=true&w=majority",
     "JWT_SECRET": "adskfiulgpiuidio",
