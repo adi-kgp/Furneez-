@@ -19,7 +19,7 @@ function Cart({products, user}) {
     const token = cookie.get('token');
     const payload = {
       params: {productId},
-      headers: {Authorization: token}
+      headers: {authorization: token}
     }
     const response = await axios.delete(url, payload);
     setCartProducts(response.data);
@@ -31,7 +31,7 @@ function Cart({products, user}) {
       const url = `${baseUrl}/api/checkout`;
       const token = cookie.get('token');
       const payload = {paymentData};
-      const headers = {headers: {Authorization: token}};
+      const headers = {headers: {authorization: token}};
       await axios.post(url, payload, headers);
       setSuccess(true);
     } catch(error){
@@ -56,7 +56,7 @@ Cart.getInitialProps = async ctx => {
     return { products: []};
   }
   const url = `${baseUrl}/api/cart`;
-  const payload = {headers: {Authorization: token}};
+  const payload = {headers: {authorization: token}};
   const response = await axios.get(url, payload);
   return {products: response.data};
 }

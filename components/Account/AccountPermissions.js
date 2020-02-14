@@ -16,7 +16,7 @@ function AccountPermissions() {
   async function getUsers(){
     const url = `${baseUrl}/api/users`;
     const token = cookie.get('token');
-    const payload = {headers:{Authorization: token}};
+    const payload = {headers:{authorization: token}};
     const response = await axios.get(url, payload);
     setUsers(response.data);
   }
