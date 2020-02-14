@@ -1,16 +1,9 @@
 
-# E-Commerce (Furniture) web application using the MERN stack
+# E-Commerce web application using the MERN Stack
 
-This repository has code to create an e-commerce web app that is pre-configured with the MERN stack (MongoDB, Express.js, 
+This repository has code to create an e-commerce furniture web app that is pre-configured with the MERN stack (MongoDB, Express.js, 
 React, Node.js). 
 
-By running this code, you'll understand how to:
-
-* Build an application that uses MongoDB, Express.js, React, and Node.js
-* Build the front end client side of the application using 'semantic-ui-react' library components that give a sophisticated
-  look and feel to the user interface and is very easy to use.
-* Build the web applicaiton using Nextjs framework which provides an alternative to create-react-app such as server side 
-  rendering and automated api routes.
 
 ## Features of the App
 
@@ -72,27 +65,6 @@ By running this code, you'll understand how to:
 - Validating Requests in Node/Express Apps using tokens
 
 - HTTP status codes
-
-
-# Dependencies(tech-stack)
-
-    axios: "^0.19.2",
-    bcrypt: "^3.0.8",
-    js-cookie: "^2.2.0",
-    jsonwebtoken: "^8.5.1",
-    mongoimport: "^1.0.6",
-    mongoose: "^5.8.12",
-    next: "^9.2.1",
-    nookies: "^2.0.8",
-    nprogress: "^0.2.0",
-    react: "^16.12.0",
-    react-dom: "^16.12.0",
-    react-stripe-checkout: "^2.6.3",
-    semantic-ui-react: "^0.87.3",
-    shortid: "^2.2.14",
-    stripe: "^7.15.0",
-    uuid: "^3.4.0",
-    validator: "^11.1.0"
 
 
 ## Link to the deployment
