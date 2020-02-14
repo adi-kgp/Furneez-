@@ -4,6 +4,11 @@ node_modules
 .env
 
 dist
+<<<<<<< HEAD
 next.config.*
 now.json
+=======
+ next.config.*
+ now.json
+>>>>>>> cddc95489660395abc48c082e5720aff3d6ff283
 .now

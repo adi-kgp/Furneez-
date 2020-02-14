@@ -1,7 +1,10 @@
 {
   "name": "furneez",
   "version": 2,
+<<<<<<< HEAD
   "alias" :"furneez",
+=======
+>>>>>>> cddc95489660395abc48c082e5720aff3d6ff283
   "env" : {
     "MONGO_SRV": "mongodb+srv://AdityaSharma:adityasharma1991@furneez-rwzjf.mongodb.net/test?retryWrites=true&w=majority",
     "JWT_SECRET": "adskfiulgpiuidio",
