@@ -1,5 +1,5 @@
 
-# E-Commerce web application using the MERN Stack
+# Furneez: E-Commerce web application using the MERN Stack
 
 This repository has code to create an e-commerce furniture web app that is pre-configured with the MERN stack (MongoDB, Express.js, 
 React, Node.js). 
